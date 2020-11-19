@@ -5,10 +5,15 @@ public class EmailUtil {
 
 
         public static void sendEmails(String username, String password, String receiver, String subject, String MSG){
+
+
             if(receiver.toLowerCase().contains("muhtar")){
                 System.err.print("Invalid Email address");
                 System.exit(1);
+
+
             }
+
 
             SimpleEmail email=new SimpleEmail();
             email.setHostName("smtp.googlemail.com");
