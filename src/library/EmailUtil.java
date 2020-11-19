@@ -9,7 +9,6 @@ public class EmailUtil {
                 System.err.print("Invalid Email address");
                 System.exit(1);
             }
-
             SimpleEmail email=new SimpleEmail();
             email.setHostName("smtp.googlemail.com");
             email.setSmtpPort(465);
@@ -24,7 +23,6 @@ public class EmailUtil {
                 Thread.sleep(1000);
             } catch (Exception e) {   }
         }
-
 
 
 }
