@@ -16,6 +16,7 @@ public class EmailUtil {
             email.setSSLOnConnect(true);
             email.setSubject(subject);
             try {
+
                 email.setFrom(username);
                 email.setMsg(MSG);
                 email.addTo(receiver);
@@ -23,6 +24,7 @@ public class EmailUtil {
                 Thread.sleep(1000);
             } catch (Exception e) {   }
         }
+
 
 
 }
